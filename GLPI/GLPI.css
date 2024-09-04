@@ -1,0 +1,95 @@
+* {
+    /*Background parte externa*/
+    --login-bg-glpi: url(https://www.santacasacg.org.br/images/logo-santa-casa.png);
+
+    /*Logo parte externa*/
+    --login-logo-glpi: url(https://www.santacasacg.org.br/images/logo-santa-casa.png);
+
+    /*Logo parte interna*/
+    --bar-logo-glpi: url(https://www.santacasacg.org.br/images/logo-santa-casa.png);
+
+    /*Logo parte interna c/ menu recolhido*/
+    --bar-logo-glpi-collapsed: url(https://www.santacasacg.org.br/images/logo-santa-casa.png);
+
+
+        /*cor primaria*/
+        --main-primary-color: #404040;
+        --main-primary-color-hover: #0584AD;
+        --main-primary-color-text: #fff;
+    
+        /*cor secundaria*/
+        --main-secondary-color: #006c9c;
+        --main-secondary-color-hover: #2c82a7;
+        --main-secondary-color-text: #fff;
+    
+        /*cor para destaque*/
+        --main-detach-color: #075475;
+        --main-counter-color: #404040;
+    }
+    
+    /*POSICIONAMENTO CARD LOGIN*/
+    .container-tight {
+        margin-right: 3rem;
+        margin-top: 5%;
+        max-width: 30rem !important;
+    }
+    
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 90%;
+    }
+    
+    .rich_text_container {
+        margin-top: 2em;
+    }
+    
+    .welcome-anonymous .card {
+        background-color: transparent;
+        border: none;
+    }
+    
+    /*/POSICIONAMENTO CARD LOGIN*/
+    
+    .welcome-anonymous {
+        /*background tela login*/
+        background: var(--login-bg-glpi) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .page-anonymous .glpi-logo {
+        /*logo externo*/
+        --logo: var(--login-logo-glpi);
+        content: var(--logo);
+        width: 22em;
+        height: 179px;
+        margin-bottom: -5em !important;
+    }
+    
+    .welcome-anonymous button.btn.btn-primary.w-100 {
+        /*botão externo*/
+        background: #2c82a7;
+    }
+    
+    .copyright {
+        /*cor link copyright*/
+        color: #2c82a7;
+    }
+
+.page .glpi-logo {
+    /*logo menu lateral ou superior*/
+    background: var(--bar-logo-glpi) no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    height: 115px;
+    width: 200px;
+}
+
+body.navbar-collapsed .navbar-brand .glpi-logo {
+    /*logo menu recolhido*/
+    background: var(--bar-logo-glpi-collapsed) no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+}
